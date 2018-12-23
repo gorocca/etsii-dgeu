@@ -34,9 +34,9 @@ class App extends React.Component {
           <News news={news} links={urls}/>
           </div>
         </div>
-        <div className="row">
-          <Channel />
-        </div>
+        <hr/>
+        <Channel />
+        <hr/>
         <Footer />
       </div>
     );
