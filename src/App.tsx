@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Calendar from 'src/components/Calendar';
 import ControlledCarousel from 'src/components/Carousel';
 import Channel from 'src/components/Channel';
 import Footer from 'src/components/Footer';
@@ -37,6 +38,7 @@ class App extends React.Component {
         <hr/>
         <Channel />
         <hr/>
+        <Calendar date={new Date()}/>
         <Footer />
       </div>
     );
