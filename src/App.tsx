@@ -23,7 +23,9 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <div className="row">
-          
+          <div className="col-md-6">
+          <ControlledCarousel />
+          </div>
           <div className="col-md-6">
           <News news={news} links={urls}/>
           </div>
