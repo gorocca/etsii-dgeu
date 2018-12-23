@@ -1,5 +1,6 @@
 import * as React from 'react';
 import ControlledCarousel from 'src/components/Carousel';
+import Channel from 'src/components/Channel';
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 import News from 'src/components/News';
@@ -18,6 +19,9 @@ const urls = ['https://www.informatica.us.es/index.php/noticias/43-anuncios/2351
 'https://www.informatica.us.es/index.php/noticias/43-anuncios/2079-horario-del-centro-en-navidad'];
 
 class App extends React.Component {
+  public componentDidMount(){
+    document.title = "ETSII - Inicio"
+  }
   public render() {
     return (
       <div className="App">
@@ -29,6 +33,9 @@ class App extends React.Component {
           <div className="col-md-6">
           <News news={news} links={urls}/>
           </div>
+        </div>
+        <div className="row">
+          <Channel />
         </div>
         <Footer />
       </div>
