@@ -5,6 +5,7 @@ import Channel from 'src/components/Channel';
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 import News from 'src/components/News';
+import Shortcuts from 'src/components/Shortcuts';
 import './App.css';
 import './assets/css/main.css';
 
@@ -38,6 +39,7 @@ class App extends React.Component {
         <hr/>
         <Channel />
         <hr/>
+        <Shortcuts/>
         <Calendar date={new Date()}/>
         <Footer />
       </div>
