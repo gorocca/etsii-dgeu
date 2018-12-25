@@ -40,6 +40,7 @@ class App extends React.Component {
         <Channel />
         <hr/>
         <Shortcuts/>
+        <hr/>
         <Calendar date={new Date()}/>
         <Footer />
       </div>
