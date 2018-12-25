@@ -19,6 +19,14 @@ class News extends React.Component<INewsProps,INewsState>{
     constructor(props:INewsProps){
         super(props);
     }
+   
+    public news(props:INewsProps){
+        const rows = [];
+        for (let i = 0; i < 8; i++) {
+            rows.push(<li className="list-group-item"><a href={this.props.links[i]}>{this.props.news[i]}</a></li>);
+        }
+        return  <ul className="list-group list-group-flush">{rows}</ul>;
+    }
 
     public render(){
     return (
@@ -27,14 +35,7 @@ class News extends React.Component<INewsProps,INewsState>{
             <span className="icon-small">
                 <h4><FontAwesomeIcon icon="newspaper" />  Noticias</h4>
             </span>
-            
-            <ul className="list-group list-group-flush">
-                <li className="list-group-item"><a href={this.props.links[0]}>{this.props.news[0]}</a></li>
-                <li className="list-group-item"><a href={this.props.links[1]}>{this.props.news[1]}</a></li>
-                <li className="list-group-item"><a href={this.props.links[2]}>{this.props.news[2]}</a></li>
-                <li className="list-group-item"><a href={this.props.links[3]}>{this.props.news[3]}</a></li>
-                <li className="list-group-item"><a href={this.props.links[4]}>{this.props.news[4]}</a></li>
-            </ul>
+            {this.news(this.props)}
         </div>
   </div>);
 }
