@@ -19,7 +19,7 @@ class Shortcuts extends React.Component{
             <div className='col-md-3'>
                 <a href='https://www.informatica.us.es/index.php/horarios'>
                     <span className="icon-small">
-                        <h3><FontAwesomeIcon icon="calendar" />  Calendario</h3>
+                        <h3><FontAwesomeIcon icon="calendar" />  Horarios</h3>
                     </span>
                 </a>
             </div>
